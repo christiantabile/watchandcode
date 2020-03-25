@@ -6,6 +6,40 @@
   </head>
 
   <body>
-    <script></script>
+    <h1>Todo List Application</h1>
+
+    <!-- 1. There should be a "Display todos" button and a "Toggle all" button in 
+    the app 
+    <button id="displayTodosButton">Display Todos</button>
+    <button id="toggleAllButton">Toggle All</button> -->
+
+    <!-- Replaced lines 13-14 with 17 and 22-->
+    <div>
+      <button onclick="handlers.displayTodos()">Display Todos</button>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div>
+      <button onclick="handlers.addTodo()">Add</button>
+      <input id="addTodoText" type="text" />
+    </div>
+
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input id="changeTodoPosition" type="number" />
+      <input id="changeTodoText" type="text" />
+    </div>
+
+    <div>
+      <button onclick="handlers.deleteTodo()">Delete Todos</button>
+      <input id="deleteTodoPosition" type="number" />
+    </div>
+
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Todo</button>
+      <input id="toggleCompletedPosition" type="number" />
+    </div>
+
+    <script src="/practical-javascript/scripts/main.js"></script>
   </body>
 </html>

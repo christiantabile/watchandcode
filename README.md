@@ -1,1 +1,1 @@
-# watchandcode Practical JavaScript Course
+# watchandcode Course
